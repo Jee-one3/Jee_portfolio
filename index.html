@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0f233a" />
+    <meta name="theme-color" content="#070f1e" />
+    <meta
+      name="description"
+      content="Jeevan Rohith Antony Manohar - Software & Cloud Infrastructure Engineer specializing in AWS, Kubernetes (EKS), Terraform, GitOps CI/CD, and distributed backend systems."
+    />
+    <meta
+      name="keywords"
+      content="Jeevan Rohith Antony Manohar, Software Engineer, Cloud Infrastructure Engineer, DevOps Engineer, Site Reliability Engineer, SRE, Platform Engineer, AWS, Kubernetes, Terraform, Python, Docker"
+    />
+    <meta name="author" content="Jeevan Rohith Antony Manohar" />
+    <title>Jeevan Rohith Antony Manohar | Software &amp; Cloud Infrastructure Engineer</title>
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Jeevan Rohith Antony Manohar | Software &amp; Cloud Infrastructure Engineer" />
+    <meta property="og:description" content="Portfolio of Jeevan Rohith Antony Manohar — Software &amp; Cloud Infrastructure Engineer specializing in AWS, Kubernetes, Terraform, GitOps CI/CD, and distributed systems." />
+    <meta property="og:type" content="website" />
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script>
+      (function () {
+        var theme = localStorage.getItem("portfolio-theme") || "dark";
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+    </script>
+  </head>
+  <body>
+    <!-- Site Header -->
+    <header class="site-header">
+      <div class="nav-container">
+        <a href="#home" class="brand-logo" data-scroll aria-label="Jeevan Rohith - Home">
+          <div class="logo-badge">JR</div>
+          <div class="brand-name">
+            <span class="brand-name-full">Jeevan Rohith</span>
+            <span class="brand-title-sm">Software &amp; Cloud Infra</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav aria-label="Main Navigation">
+          <ul class="nav-menu">
+            <li><a href="#about" class="nav-link" data-scroll>About</a></li>
+            <li><a href="#experience" class="nav-link" data-scroll>Experience</a></li>
+            <li><a href="#projects" class="nav-link" data-scroll>Projects</a></li>
+            <li><a href="#skills" class="nav-link" data-scroll>Skills</a></li>
+            <li><a href="#education" class="nav-link" data-scroll>Education</a></li>
+            <li><a href="#contact" class="nav-link" data-scroll>Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <button
+            type="button"
+            class="btn-theme-toggle"
+            id="theme-toggle"
+            aria-label="Switch to light theme"
+            title="Switch theme"
+          >
+            <!-- Sun icon (shown in dark mode) -->
+            <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <!-- Moon icon (shown in light mode) -->
+            <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+
+          <a
+            href="files/Jeevan_Rohith_Resume.pdf"
+            class="btn-nav-resume"
+            download="Jeevan_Rohith_Resume.pdf"
+            aria-label="Download Resume"
+          >
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            Resume
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+          id="nav-toggle"
+          aria-label="Toggle navigation menu"
+        >
+          <span class="icon-menu" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </span>
+          <span class="icon-close" hidden aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </span>
+        </button>
+      </div>
+
+      <!-- Mobile Dropdown Menu -->
+      <div class="mobile-nav" id="mobile-nav" aria-label="Mobile Navigation">
+        <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border-color);">
+          <span style="font-size: 0.875rem; font-weight: 600; color: var(--text-muted);">Theme</span>
+          <button
+            type="button"
+            class="btn-theme-toggle"
+            id="theme-toggle-mobile"
+            aria-label="Switch theme"
+            title="Switch theme"
+          >
+            <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+        </div>
+        <a href="#about" class="nav-link" data-scroll>About</a>
+        <a href="#experience" class="nav-link" data-scroll>Experience</a>
+        <a href="#projects" class="nav-link" data-scroll>Projects</a>
+        <a href="#skills" class="nav-link" data-scroll>Skills</a>
+        <a href="#education" class="nav-link" data-scroll>Education</a>
+        <a href="#contact" class="nav-link" data-scroll>Contact</a>
+        <a
+          href="files/Jeevan_Rohith_Resume.pdf"
+          class="btn-nav-resume"
+          download="Jeevan_Rohith_Resume.pdf"
+        >
+          Download Resume (PDF)
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section id="home" class="hero-section">
+        <div class="container">
+          <div class="hero-grid">
+            <div class="hero-content">
+              <div class="hero-status-pill">
+                <span class="status-dot"></span>
+                <span>Open to Software, Cloud &amp; DevOps/SRE Roles</span>
+              </div>
+              <p class="hero-greeting">Hi, I am</p>
+              <h1 class="hero-name">Jeevan Rohith Antony Manohar</h1>
+              <p class="hero-role">Software &amp; Cloud Infrastructure Engineer</p>
+
+              <div class="hero-badges">
+                <span class="hero-badge">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  AWS Certified Solutions Architect
+                </span>
+                <span class="hero-badge">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                  M.S. in Computer Science @ SDSU
+                </span>
+                <span class="hero-badge">Kubernetes (EKS) &amp; GitOps</span>
+                <span class="hero-badge">Distributed Systems &amp; Observability</span>
+              </div>
+
+              <p class="hero-bio">
+                Specializing in architecting scalable backend microservices (Python, REST APIs), automating cloud-native infrastructure (AWS, Terraform, Docker), and orchestrating containerized workloads on Kubernetes (EKS). Experienced in streamlining GitOps CI/CD pipelines (Jenkins, ArgoCD), driving distributed observability (Prometheus, Grafana, Splunk), and engineering toil reduction.
+              </p>
+
+              <div class="hero-actions">
+                <a
+                  class="btn-primary"
+                  download="Jeevan_Rohith_Resume.pdf"
+                  href="files/Jeevan_Rohith_Resume.pdf"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                  Download Resume
+                </a>
+                <a href="#experience" class="btn-secondary" data-scroll>
+                  View Experience
+                </a>
+                <a href="#projects" class="btn-secondary" data-scroll>
+                  View Projects
+                </a>
+              </div>
+
+              <div class="hero-socials">
+                <a href="https://www.linkedin.com/in/jeevan-rohith/" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="LinkedIn Profile">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                  </svg>
+                  LinkedIn
+                </a>
+                <a href="https://github.com/Jee-one3" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="GitHub Profile">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                  GitHub
+                </a>
+                <a href="mailto:jeevanrohithantonymanohar@gmail.com" class="social-pill" aria-label="Send Email">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  Email
+                </a>
+              </div>
+            </div>
+
+            <div class="hero-visual">
+              <div class="hero-photo-frame">
+                <img src="static/media/profile2.png" alt="Jeevan Rohith Antony Manohar portrait" width="380" height="420" />
+                <div class="hero-floating-card">
+                  <div class="floating-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+                  </div>
+                  <div class="floating-text">
+                    <h4>Production Systems</h4>
+                    <p>AWS • EKS • Terraform • GitOps</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section id="about" class="section section-alt">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Profile</span>
+            <h2 class="section-title">About Me</h2>
+            <p class="section-desc">Engineering resilient cloud infrastructure, scalable backend APIs, and developer platforms.</p>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-photo-wrapper">
+              <div class="about-photo-frame">
+                <img src="static/media/WhatsApp Image 2026-05-13 at 10.19.28.jpeg" alt="Jeevan Rohith outdoors portrait" width="400" height="440" />
+              </div>
+              <div class="about-photo-caption">
+                <span>📍 Seattle, Washington</span>
+                <span>M.S. CS Candidate @ SDSU</span>
+              </div>
+            </div>
+
+            <div class="about-content">
+              <p>
+                I am <strong>Jeevan Rohith Antony Manohar</strong>, a Software &amp; Cloud Infrastructure Engineer with hands-on experience designing, automating, and maintaining mission-critical cloud-native services. As an <strong>AWS Certified Solutions Architect</strong>, I bridge backend software engineering with site reliability and modern GitOps practices.
+              </p>
+              <p>
+                During my tenure at <strong>Kaar Technologies</strong> (Jan 2022 – Apr 2024), I engineered Python REST APIs within microservices architectures, stabilized asynchronous services through distributed tracing, and accelerated multi-environment deployments by ~20% using Jenkins and ArgoCD GitOps pipelines. I also spearheaded observability initiatives across 10+ services using Prometheus, Grafana, Splunk, and Jaeger, reducing Mean Time to Detect (MTTD) by ~25% and Root Cause Analysis (RCA) time by ~30%.
+              </p>
+              <p>
+                Currently, I am pursuing my <strong>Master of Science in Computer Science at San Diego State University</strong> (Aug 2024 – May 2026, <strong>GPA: 3.75/4.00</strong>). My academic curriculum centers on Networks &amp; Distributed Systems, Advanced Algorithm Design, Computer Security, and Object-Oriented Systems.
+              </p>
+              <p>
+                Beyond system design and terminal windows, I am a dedicated cricketer and an enthusiastic traveler. Cricket has instilled in me team collaboration, strategic discipline, and adaptability under pressure, while exploring new cultures broadens my problem-solving perspective.
+              </p>
+
+              <div class="about-metrics">
+                <div class="metric-card">
+                  <div class="metric-number">2+ Yrs</div>
+                  <div class="metric-label">Production Experience</div>
+                </div>
+                <div class="metric-card">
+                  <div class="metric-number">~20%</div>
+                  <div class="metric-label">Deploy Velocity Boost</div>
+                </div>
+                <div class="metric-card">
+                  <div class="metric-number">~30%</div>
+                  <div class="metric-label">RCA Time Reduction</div>
+                </div>
+                <div class="metric-card">
+                  <div class="metric-number">3.75</div>
+                  <div class="metric-label">Graduate GPA (SDSU)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WORK EXPERIENCE SECTION -->
+      <section id="experience" class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Career History</span>
+            <h2 class="section-title">Work Experience</h2>
+            <p class="section-desc">Proven track record in architecting reliable backend services and automated cloud infrastructure.</p>
+          </div>
+
+          <div class="experience-timeline">
+            <article class="experience-card">
+              <header class="exp-header">
+                <div class="exp-title-group">
+                  <h3>Software Engineer (Backend &amp; Cloud-Infra)</h3>
+                  <div class="exp-company">
+                    <span>Kaar Technologies Private Limited</span>
+                  </div>
+                </div>
+                <div class="exp-meta">
+                  <span class="exp-date-badge">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                    Jan 2022 – Apr 2024
+                  </span>
+                  <span class="exp-location">Chennai, India</span>
+                </div>
+              </header>
+
+              <p class="exp-summary">
+                Engineered core backend microservices, streamlined multi-stage GitOps delivery pipelines, orchestrated containerized workloads on AWS EKS, and established end-to-end distributed observability.
+              </p>
+
+              <ul class="exp-bullets">
+                <li class="exp-bullet">
+                  <strong>Backend Microservices Architecture:</strong> Built and maintained Python REST APIs in a microservices architecture; defined service boundaries and API versioning enabling feature teams to deploy independently each sprint.
+                </li>
+                <li class="exp-bullet">
+                  <strong>Production Reliability &amp; Tracing:</strong> Diagnosed asynchronous microservice failures via centralized logging and distributed tracing; shipped retry and timeout resilience fixes that directly improved production stability.
+                </li>
+                <li class="exp-bullet">
+                  <strong>GitOps CI/CD Automation:</strong> Accelerated deployment velocity by <strong>~20%</strong> across multi-stage environments using automated CI/CD pipelines (Jenkins, ArgoCD, Docker) with centralized secrets management and end-to-end deployment traceability.
+                </li>
+                <li class="exp-bullet">
+                  <strong>Kubernetes Container Releases:</strong> Shipped containerized workloads on <strong>AWS EKS</strong> with namespace-level RBAC, establishing consistent, repeatable deployments across development, staging, and production clusters.
+                </li>
+                <li class="exp-bullet">
+                  <strong>Observability &amp; Incident Reduction:</strong> Built alerting and dashboards (Prometheus, Grafana, Splunk, Jaeger) for 10+ production services, cutting Mean Time to Detect (MTTD) by <strong>~25%</strong> and Root Cause Analysis (RCA) time by <strong>~30%</strong>.
+                </li>
+                <li class="exp-bullet">
+                  <strong>On-Call &amp; Blameless Postmortems:</strong> Participated in on-call rotations and blameless postmortems; drove engineering corrective actions that cut repeat incidents over two consecutive quarters and reduced alert fatigue.
+                </li>
+                <li class="exp-bullet">
+                  <strong>Operational Toil Reduction:</strong> Reduced weekly operational toil by <strong>~5 hours</strong> by developing automated Python/Bash health checks, production readiness checklists, and operational runbooks for engineering teams.
+                </li>
+              </ul>
+
+              <footer class="exp-tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">REST APIs</span>
+                <span class="tech-tag">AWS EKS</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">Jenkins</span>
+                <span class="tech-tag">ArgoCD</span>
+                <span class="tech-tag">Prometheus</span>
+                <span class="tech-tag">Grafana</span>
+                <span class="tech-tag">Splunk</span>
+                <span class="tech-tag">Jaeger</span>
+                <span class="tech-tag">RBAC</span>
+                <span class="tech-tag">Bash/Shell</span>
+              </footer>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURED PROJECTS SECTION -->
+      <section id="projects" class="section section-alt">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Featured Work</span>
+            <h2 class="section-title">Projects</h2>
+            <p class="section-desc">Infrastructure automation, applied AI for operations, platform engineering, and cloud systems.</p>
+          </div>
+
+          <div class="projects-grid">
+            <!-- Project 1: AI-Incident Response Platform -->
+            <article class="project-card">
+              <div class="project-top">
+                <div class="project-badge-row">
+                  <span class="project-category">AI Infrastructure &amp; SRE</span>
+                  <span class="project-year">2026</span>
+                </div>
+                <h3 class="project-title">AI-Incident Response Platform</h3>
+                <div class="project-problem">
+                  <strong>Problem:</strong> On-call engineers lose critical minutes manually digging through distributed logs and correlate metrics when high-severity alerts fire.
+                </div>
+                <p class="project-desc">
+                  Designed a production-style event-driven pipeline on AWS EKS that converts Prometheus alerts into an automated triage flow by triggering a Python webhook, correlating the exact pod logs with alert context, and surfacing a clear RCA.
+                </p>
+                <p class="project-impact">
+                  <strong>Impact:</strong> Reduced incident triage time by <strong>~60%</strong> using an applied AI automation workflow with LLaMA 3, Prometheus, and Python webhooks to synthesize distributed logs, correlate metrics, and generate instant root-cause remediation guides.
+                </p>
+              </div>
+              <div class="project-bottom">
+                <div class="project-tech-row">
+                  <span class="project-tech-pill">AWS</span>
+                  <span class="project-tech-pill">EKS</span>
+                  <span class="project-tech-pill">Terraform</span>
+                  <span class="project-tech-pill">Python</span>
+                  <span class="project-tech-pill">LLaMA 3</span>
+                  <span class="project-tech-pill">Prometheus</span>
+                  <span class="project-tech-pill">Alertmanager</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/Jee-one3" target="_blank" rel="noopener noreferrer" class="btn-project-link">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    GitHub Code
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2: KubeGuardian AI -->
+            <article class="project-card">
+              <div class="project-top">
+                <div class="project-badge-row">
+                  <span class="project-category">DevSecOps &amp; Compliance</span>
+                  <span class="project-year">2026</span>
+                </div>
+                <h3 class="project-title">KubeGuardian AI</h3>
+                <div class="project-problem">
+                  <strong>Problem:</strong> Insecure Kubernetes manifests and IaC templates slip into production without automated governance and policy validation.
+                </div>
+                <p class="project-desc">
+                  Built a FastAPI service that scans Kubernetes YAML manifests and Terraform code using direct upload or GitHub repository link with 14+ governance rules across security, reliability, and IaC hygiene.
+                </p>
+                <p class="project-impact">
+                  <strong>Impact:</strong> Scores infrastructure health (0–100), prioritizes findings, and outputs Gemini-assisted remediation plus downloadable PDF reports for engineering review before hitting production, embedding DevSecOps principles into CI.
+                </p>
+              </div>
+              <div class="project-bottom">
+                <div class="project-tech-row">
+                  <span class="project-tech-pill">Python</span>
+                  <span class="project-tech-pill">Kubernetes</span>
+                  <span class="project-tech-pill">Terraform</span>
+                  <span class="project-tech-pill">FastAPI</span>
+                  <span class="project-tech-pill">Gemini AI</span>
+                  <span class="project-tech-pill">GCP</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/Jee-one3" target="_blank" rel="noopener noreferrer" class="btn-project-link">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    GitHub Code
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3: Infra Control Plane -->
+            <article class="project-card">
+              <div class="project-top">
+                <div class="project-badge-row">
+                  <span class="project-category">Platform Engineering</span>
+                  <span class="project-year">2026</span>
+                </div>
+                <h3 class="project-title">Infra Control Plane</h3>
+                <div class="project-problem">
+                  <strong>Problem:</strong> Uncontrolled local Terraform CLI runs create race conditions, state file locks, and lack auditability across development and production environments.
+                </div>
+                <p class="project-desc">
+                  Engineered a FastAPI backend that runs Terraform plan, apply, and destroy as authenticated REST calls for dev and prod, moving infrastructure mutations through a controlled central service.
+                </p>
+                <p class="project-impact">
+                  <strong>Impact:</strong> Implemented API-key auth, a confirmation guard on Destroy operations, and logs every run to PostgreSQL (environment, action, exit code, timestamp) for complete audit traceability across <strong>19+ AWS resources</strong> per environment.
+                </p>
+              </div>
+              <div class="project-bottom">
+                <div class="project-tech-row">
+                  <span class="project-tech-pill">Python</span>
+                  <span class="project-tech-pill">REST API</span>
+                  <span class="project-tech-pill">FastAPI</span>
+                  <span class="project-tech-pill">Terraform</span>
+                  <span class="project-tech-pill">Docker</span>
+                  <span class="project-tech-pill">PostgreSQL</span>
+                  <span class="project-tech-pill">AWS</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/Jee-one3" target="_blank" rel="noopener noreferrer" class="btn-project-link">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    GitHub Code
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 4: Kubernetes Platform Engineering on AWS EKS -->
+            <article class="project-card">
+              <div class="project-top">
+                <div class="project-badge-row">
+                  <span class="project-category">Cloud Infrastructure &amp; Mesh</span>
+                  <span class="project-year">Production-Grade</span>
+                </div>
+                <h3 class="project-title">Kubernetes Platform Engineering on AWS EKS</h3>
+                <div class="project-problem">
+                  <strong>Problem:</strong> Deploying microservices directly on unmanaged clusters causes networking bottlenecks, unverified access controls, and inconsistent deployments.
+                </div>
+                <p class="project-desc">
+                  Designed and deployed a production-grade Kubernetes platform on AWS EKS using Terraform, implementing service mesh (Istio) for fine-grained traffic routing, mutual TLS security, and resilient microservice communication.
+                </p>
+                <p class="project-impact">
+                  <strong>Impact:</strong> Standardized infrastructure-as-code modules for VPC networking, managed worker nodes, Helm-based ingress controllers, and automated service telemetry.
+                </p>
+              </div>
+              <div class="project-bottom">
+                <div class="project-tech-row">
+                  <span class="project-tech-pill">AWS</span>
+                  <span class="project-tech-pill">EKS</span>
+                  <span class="project-tech-pill">Kubernetes</span>
+                  <span class="project-tech-pill">Terraform</span>
+                  <span class="project-tech-pill">Docker</span>
+                  <span class="project-tech-pill">Helm</span>
+                  <span class="project-tech-pill">Istio</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/Jee-one3/kube-Engg-on-AWS-EKS"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn-project-link"
+                    aria-label="GitHub Repository for Kubernetes Platform Engineering"
+                  >
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    GitHub Repository
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- TECHNICAL SKILLS SECTION -->
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Technical Expertise</span>
+            <h2 class="section-title">Skills &amp; Capabilities</h2>
+            <p class="section-desc">Organized by core engineering disciplines based on production and project experience.</p>
+          </div>
+
+          <div class="skills-container">
+            <!-- 1. Cloud & Infrastructure -->
+            <div class="skill-category-card">
+              <div class="skill-cat-header">
+                <img src="assets/aws.png" alt="AWS Cloud" class="skill-cat-icon" />
+                <h3 class="skill-cat-title">Cloud &amp; Infrastructure</h3>
+              </div>
+              <div class="skill-tags-list">
+                <span class="skill-pill primary">AWS</span>
+                <span class="skill-pill">EC2</span>
+                <span class="skill-pill">EKS</span>
+                <span class="skill-pill">S3</span>
+                <span class="skill-pill">Lambda</span>
+                <span class="skill-pill">RDS</span>
+                <span class="skill-pill">VPC</span>
+                <span class="skill-pill">IAM</span>
+                <span class="skill-pill">SNS</span>
+                <span class="skill-pill">Route 53</span>
+                <span class="skill-pill">GCP</span>
+              </div>
+            </div>
+
+            <!-- 2. Containers & Orchestration -->
+            <div class="skill-category-card">
+              <div class="skill-cat-header">
+                <img src="assets/kubernetes.png" alt="Kubernetes" class="skill-cat-icon" />
+                <h3 class="skill-cat-title">Containers &amp; K8s</h3>
+              </div>
+              <div class="skill-tags-list">
+                <span class="skill-pill primary">Kubernetes (EKS)</span>
+                <span class="skill-pill primary">Docker</span>
+                <span class="skill-pill">Helm</span>
+                <span class="skill-pill">Istio Service Mesh</span>
+                <span class="skill-pill">Multi-Stage Builds</span>
+                <span class="skill-pill">Container Security</span>
+              </div>
+            </div>
+
+            <!-- 3. Infrastructure as Code & Automation -->
+            <div class="skill-category-card">
+              <div class="skill-cat-header">
+                <img src="assets/terraform.png" alt="Terraform IaC" class="skill-cat-icon" />
+                <h3 class="skill-cat-title">IaC &amp; Automation</h3>
+              </div>
+              <div class="skill-tags-list">
+                <span class="skill-pill primary">Terraform</span>
+                <span class="skill-pill">CloudFormation</span>
+                <span class="skill-pill">Ansible</span>
+                <span class="skill-pill">Git / GitHub</span>
+                <span class="skill-pill">Remote State</span>
+                <span class="skill-pill">Modular IaC</span>
+              </div>
+            </div>
+
+            <!-- 4. CI/CD & GitOps -->
+            <div class="skill-category-card">
+              <div class="skill-cat-header">
+                <img src="assets/jenkins.png" alt="Jenkins CI/CD" class="skill-cat-icon" />
+                <h3 class="skill-cat-title">CI/CD &amp; GitOps</h3>
+              </div>
+              <div class="skill-tags-list">
+                <span class="skill-pill primary">Jenkins</span>
+                <span class="skill-pill primary">ArgoCD</span>
+                <span class="skill-pill">GitHub Actions</span>
+                <span class="skill-pill">GitOps Pipelines</span>
+                <span class="skill-pill">Secrets Management</span>
+                <span class="skill-pill">Release Tracking</span>
+              </div>
+            </div>
+
+            <!-- 5. Observability & SRE -->
+            <div class="skill-category-card">
+              <div class="skill-cat-header">
+                <img src="assets/prometheus.svg" alt="Prometheus Monitoring" class="skill-cat-icon" />
+                <h3 class="skill-cat-title">Observability &amp; SRE</h3>
+              </div>
+              <div class="skill-tags-list">
+                <span class="skill-pill primary">Prometheus</span>
+                <span class="skill-pill primary">Grafana</span>
+                <span class="skill-pill">Splunk</span>
+                <span class="skill-pill">Jaeger</span>
+                <span class="skill-pill">CloudWatch</span>
+                <span class="skill-pill">OpenTelemetry</span>
+                <span class="skill-pill">Alertmanager</span>
+                <span class="skill-pill">SLI / SLO</span>
+                <span class="skill-pill">On-Call Postmortems</span>
+              </div>
+            </div>
+
+            <!-- 6. Programming & Scripting -->
+            <div class="skill-category-card">
+              <div class="skill-cat-header">
+                <img src="assets/python.png" alt="Python Programming" class="skill-cat-icon" />
+                <h3 class="skill-cat-title">Languages &amp; OS</h3>
+              </div>
+              <div class="skill-tags-list">
+                <span class="skill-pill primary">Python</span>
+                <span class="skill-pill primary">Linux / Unix</span>
+                <span class="skill-pill">Bash / Shell</span>
+                <span class="skill-pill">JavaScript</span>
+                <span class="skill-pill">TCP/IP &amp; DNS</span>
+                <span class="skill-pill">VPC Networking</span>
+              </div>
+            </div>
+
+            <!-- 7. Backend & Databases -->
+            <div class="skill-category-card">
+              <div class="skill-cat-header">
+                <img src="assets/postgres.png" alt="PostgreSQL" class="skill-cat-icon" />
+                <h3 class="skill-cat-title">Backend &amp; Databases</h3>
+              </div>
+              <div class="skill-tags-list">
+                <span class="skill-pill primary">REST APIs</span>
+                <span class="skill-pill primary">FastAPI</span>
+                <span class="skill-pill">Microservices</span>
+                <span class="skill-pill">PostgreSQL</span>
+                <span class="skill-pill">MySQL</span>
+                <span class="skill-pill">RDS</span>
+                <span class="skill-pill">MongoDB</span>
+              </div>
+            </div>
+
+            <!-- 8. Security & AI Tooling -->
+            <div class="skill-category-card">
+              <div class="skill-cat-header">
+                <img src="assets/claude.svg" alt="AI Tooling" class="skill-cat-icon" />
+                <h3 class="skill-cat-title">Security &amp; AI Tools</h3>
+              </div>
+              <div class="skill-tags-list">
+                <span class="skill-pill primary">RBAC &amp; IAM</span>
+                <span class="skill-pill">HashiCorp Vault</span>
+                <span class="skill-pill">API Auth &amp; Audit Logs</span>
+                <span class="skill-pill">LLM / RAG for Ops</span>
+                <span class="skill-pill">LLaMA 3</span>
+                <span class="skill-pill">Gemini</span>
+                <span class="skill-pill">Claude</span>
+                <span class="skill-pill">Cursor / Copilot</span>
+                <span class="skill-pill">Amazon Bedrock &amp; Q</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION & CERTIFICATIONS SECTION -->
+      <section id="education" class="section section-alt">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Academic Background</span>
+            <h2 class="section-title">Education &amp; Credentials</h2>
+            <p class="section-desc">Academic excellence and verified cloud certifications.</p>
+          </div>
+
+          <div class="education-grid">
+            <!-- Degrees Column -->
+            <div class="edu-cards-column">
+              <!-- Master's Degree -->
+              <article class="edu-card">
+                <div class="edu-card-top">
+                  <div>
+                    <h3 class="edu-degree">Master of Science in Computer Science</h3>
+                    <p class="edu-school">San Diego State University (SDSU) — San Diego, CA</p>
+                  </div>
+                  <span class="edu-gpa-badge">GPA: 3.75 / 4.00</span>
+                </div>
+                <p class="edu-date">Aug 2024 – May 2026</p>
+                <div class="edu-coursework">
+                  <p class="edu-coursework-title">Relevant Graduate Coursework</p>
+                  <div class="edu-coursework-tags">
+                    <span class="edu-course-pill">Algorithm Analysis &amp; Design</span>
+                    <span class="edu-course-pill">Networks &amp; Distributed Systems</span>
+                    <span class="edu-course-pill">Advanced OOPS</span>
+                    <span class="edu-course-pill">Computer Security</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Bachelor's Degree -->
+              <article class="edu-card">
+                <div class="edu-card-top">
+                  <div>
+                    <h3 class="edu-degree">Bachelor of Engineering in Computer Science</h3>
+                    <p class="edu-school">Anna University — Chennai, India</p>
+                  </div>
+                  <span class="edu-gpa-badge">GPA: 3.60 / 4.00</span>
+                </div>
+                <p class="edu-date">Aug 2018 – May 2022</p>
+                <div class="edu-coursework">
+                  <p class="edu-coursework-title">Undergraduate Coursework</p>
+                  <div class="edu-coursework-tags">
+                    <span class="edu-course-pill">Distributed Networking</span>
+                    <span class="edu-course-pill">Data Structures &amp; Algorithms</span>
+                    <span class="edu-course-pill">Operating Systems</span>
+                    <span class="edu-course-pill">Computer Architecture</span>
+                    <span class="edu-course-pill">Software Engineering</span>
+                    <span class="edu-course-pill">Cloud Computing</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Certifications Column -->
+            <div class="certs-column">
+              <article class="cert-card">
+                <div class="cert-badge-icon">
+                  <img src="assets/aws.png" alt="AWS Logo" />
+                </div>
+                <div>
+                  <h3 class="cert-title">AWS Certified Solutions Architect</h3>
+                  <p class="cert-issuer">Amazon Web Services</p>
+                  <p class="cert-desc">
+                    Validated expertise in designing resilient, highly available, secure, and cost-optimized distributed systems on AWS, encompassing multi-tier architectures, auto-scaling compute, managed databases, and VPC networking.
+                  </p>
+                </div>
+              </article>
+
+              <article class="cert-card">
+                <div class="cert-badge-icon" style="background: var(--brand-blue-light); border-color: #bfdbfe; color: var(--brand-blue);">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                </div>
+                <div>
+                  <h3 class="cert-title">Engineering Core Focus</h3>
+                  <p class="cert-issuer">Cloud-Native &amp; SRE</p>
+                  <p class="cert-desc">
+                    Specialized in enterprise microservice boundaries, namespace-isolated EKS clusters, policy-as-code DevSecOps, and blameless operational reliability.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section-header" style="text-align: center; margin-bottom: 2.5rem;">
+            <span class="section-tag">Get In Touch</span>
+            <h2 class="section-title">Contact &amp; Connect</h2>
+            <p class="section-desc" style="margin-left: auto; margin-right: auto;">
+              Open to Software, Cloud Infrastructure, DevOps, SRE, and Platform Engineering opportunities.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <!-- Email -->
+            <div class="contact-card">
+              <div class="contact-icon-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <h4>Email</h4>
+              <a href="mailto:jeevanrohithantonymanohar@gmail.com">jeevanrohithantonymanohar@gmail.com</a>
+            </div>
+
+            <!-- Phone -->
+            <div class="contact-card">
+              <div class="contact-icon-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <h4>Phone</h4>
+              <a href="tel:+16198657149">+1 (619) 865-7149</a>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="contact-card">
+              <div class="contact-icon-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </div>
+              <h4>LinkedIn</h4>
+              <a href="https://www.linkedin.com/in/jeevan-rohith/" target="_blank" rel="noopener noreferrer">in/jeevan-rohith</a>
+            </div>
+
+            <!-- GitHub -->
+            <div class="contact-card">
+              <div class="contact-icon-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </div>
+              <h4>GitHub</h4>
+              <a href="https://github.com/Jee-one3" target="_blank" rel="noopener noreferrer">github.com/Jee-one3</a>
+            </div>
+          </div>
+
+          <!-- Bottom CTA Box -->
+          <div class="contact-cta-box">
+            <h3>You made it all the way down! That's at least 99.999% patience. 🙌</h3>
+            <p>
+              Thanks a ton for taking the time to explore my corner of the internet. Whether you have an exciting engineering role, want to debate microservices vs. monoliths, solve tricky Kubernetes puzzles, or you need an all-rounder in your team — my inbox has zero rate limits and zero on-call alerts. Let's talk!
+            </p>
+            <div class="contact-cta-actions">
+              <a href="mailto:jeevanrohithantonymanohar@gmail.com" class="btn-cta-white">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                Say Hello &amp; Let's Chat ☕
+              </a>
+              <a
+                href="files/Jeevan_Rohith_Resume.pdf"
+                class="btn-cta-outline"
+                download="Jeevan_Rohith_Resume.pdf"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                Download Resume (PDF)
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-copy">
+          &copy; <span id="year">2026</span> <strong>Jeevan Rohith Antony Manohar</strong>. All rights reserved.
+        </div>
+        <ul class="footer-nav">
+          <li><a href="#home" data-scroll>Home</a></li>
+          <li><a href="#about" data-scroll>About</a></li>
+          <li><a href="#experience" data-scroll>Experience</a></li>
+          <li><a href="#projects" data-scroll>Projects</a></li>
+          <li><a href="#skills" data-scroll>Skills</a></li>
+          <li><a href="#education" data-scroll>Education</a></li>
+          <li><a href="#contact" data-scroll>Contact</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- JavaScript Interactions -->
+    <script src="js/site.js" defer></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
